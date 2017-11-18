@@ -20,5 +20,5 @@ Run the application <br>
 `$ /home/{USER}/bin/main`
 
 ## How to use?
-Go to the home page of URL and you can see the string response as
+Go to the home page of URL and you can see the string response as <br>
 `{"desc":"UTC time","nano":1510968028319270900,"time":"2017-11-18 01:20:28.3192709 +0000 UTC"}`
