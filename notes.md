@@ -18,8 +18,9 @@ Note: Docker command to attach to a terminal of a running container <br>
 `$  docker exec -i -t <name> /bin/bash`
 
 
-### Run ansible playbook after git cloning this repo
-`$ sudo ansible-playbook deploy.yml -i /opt/bitnami/inventory`
+### Run ansible playbook after git cloning this repo.
+Make sure before runnig ansible playbook you have inventory of servers
+`$ sudo ansible-playbook deploy.yml -i ../inventory`
 <br><br><br>
 deploy.yml
 ```
