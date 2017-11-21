@@ -20,7 +20,10 @@ Note: Docker command to attach to a terminal of a running container <br>
 
 ### Run ansible playbook after git cloning this repo.
 Make sure before runnig ansible playbook you have inventory of servers<br>
+To deploy Time server<br>
 `$ sudo ansible-playbook SimpleGoServer/deploy.yml -i inventory`
+To deploy Proxy server<br>
+`$ sudo ansible-playbook SimpleGoServer/deploy-proxy.yml -i inventory`
 <br><br><br>
 deploy.yml
 ```
