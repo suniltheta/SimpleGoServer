@@ -1,0 +1,12 @@
+---
+- hosts: prodproxy
+  tasks:
+  - name: Upload src app
+    copy: src=src/proxy dest=/home/ec2-user/app
+
+  - name: Upload Dockerfile
+    copy: src=DockerfileProxy dest=/home/ec2-user/Dockerfile mode=0755
+
+  - name: Deploy Docker container
+    become_user: ec2-user
+    script: deployProxy.sh
